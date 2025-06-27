@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left, #fff 85%, #c3f5ff 20%);
+}
+
+.navsection{
+  width: 100%; height: 20vh; background-color: yellow;
+  display: flex; justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+}
+
+.logo{
+  width: 40%;
+  color: #fff;
+  background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+  padding-left: 100px;
+ box-sizing: border-box;
+}
+
+.logo h1{
+  text-transform: uppercase
+  font-size: 1.6rem;
+  animation: aggepiche 2s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes aggepiche{
+  from{ padding-left: 65px; }
+  to{ padding-right: 60px; }
+}
+
+
+nav{
+  width: 60%;
+  justify-content: space-around;
+  display: flex;
+}
+
+nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 900;
+  font-size: 17px;
+  position: relative;
+}
+
+nav a:first-child{
+  color: #4458dc;
+}
+
+nav a:before{
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  border-bottom: 2px solid #4458dc;
+  transition: all .4s linear;
+}
+
+nav a:hover:before{
+  width: 100%;
+}
+
+
+main{
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.rightside{
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  background-color: #c3f5ff;
+}
+
+
+.rightside img{
+  max-width: 350px;
+  height: auto;
+}
+
+.leftside{
+  color: #000;
+  text-transform: uppercase;
+}
+
+
+.leftside h3{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+
+
+.leftside:after{
+  content: "";
+  width: 450px;
+  height: 3px;
+  position: absolute;
+  top: 43%;
+  left: 15%;
+  background: #000;
+}
+
+.leftside h1{
+  margin-top: 20px;
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+
+.leftside h2{
+  margin-bottom: 35px;
+  font-weight: 500;
+  word-spacing: 4px;
+}
+
+
+.leftside .btn1{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 50px;
+  color: #fff;
+  background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%);
+  box-shadow: 0 10px 30px rgba(118,85,255,0.3);
+}
+
+
+.leftside .btn2{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  align-items: center;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 50px;
+  border: 2px solid #4458dc;
+  color: #222;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+
+

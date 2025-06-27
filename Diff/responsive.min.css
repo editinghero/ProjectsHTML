@@ -1,0 +1,13 @@
+#navbar {
+    flex-direction: column
+}
+
+#logo img {
+    margin: 1rem 1rem 0;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0 7px;
+    margin: 0 0 10px 0
+}

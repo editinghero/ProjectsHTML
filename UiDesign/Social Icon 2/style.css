@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* background */
+
+.centerdiv{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* icon design */
+
+a{
+  height: 100px;
+  width: 100px;
+  background-color: #f5f6fa;
+  border-radius: 50px;
+  text-align: center;
+  margin: 10px;
+  line-height: 110px;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+  position: relative;
+  overflow: hidden;
+
+}
+
+a i{
+  transition: all 0.3s linear;
+}
+
+a:hover i{
+  transform: scale(1.4);
+}
+
+/* color */
+
+
+.fa-facebook{
+  color: #;
+}
+
+.fa-instagram{
+  color: #e84393;
+}
+
+.fa-twitter{
+  color: #0097e6;
+}
+
+.fa-youtube{
+  color: #e84113;
+}
+
+.fa-linkedin{
+  color: #0097e6;
+}
+
+/* V.2 */
+
+a:hover .fa{
+  transition: scale(1.5);
+  color: #f5f6fa;
+}
+
+a i{
+  transition: all 0.3s linear;
+}
+
+
+a:before {
+  content: '';
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 90%;
+  left: -50%;
+  background-color: #3498db;
+  transform: rotate(60deg);
+}
+
+
+a:hover:before{
+  animation: socialicons 0.8s 1;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes socialicons{
+  0%{ top: 90%; left: -50%; }
+  50%{ top: -60%; left: -10%; } 
+  100%{ top: -10%; left: -10%; }
+}
+

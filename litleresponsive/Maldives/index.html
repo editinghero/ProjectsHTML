@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maldives</title>
+  <link rel="stylesheet" href="Maldives.css">
+
+</head>
+<body>
+  
+ <div class="hero">
+   
+     <video autoplay loop muted plays-inline id="backVideo">
+     <source src="" type="video/mp4">
+     </video>
+     
+ 	<div class="logo">
+ 	  <img src="logo.png"/>
+ 	  </div>
+ 	  <div class="slidebar">
+ 	    <div class="text-box">
+ 	    <h1> GLOBAL TURISOM </h1>
+ 	    <h4> luxury hotels and living </h4>
+ 	    <div class="line"></div>
+ 	</div>
+ </div>
+  <div class="content">
+    <h1>Maldives</h1>
+    <p>Very nice appartment in Maldives</p>
+    <div class="btn" id="playbtn">
+      <img src="play.png" id="play"> Watch Video
+    </div>
+    </div>
+
+   <<script type="text/javascript" charset="utf-8">
+   
+     var backVideo = document.getElementById('backVideo');
+     var playbtn = document.getElementById('playbtn');
+     var play = document.getElementById('play');
+     
+     playbtn.onclick = function(){
+       backVideo.style.display = "block"
+       
+       
+      if(backVideo.paused){
+        backVideo.play();
+        play.src="pause.png";
+      }
+      else{
+      backVideo.pause();
+      play.src="play.png";
+      }
+     }
+     
+   </script>
+   
+  
+</body>
+</html>

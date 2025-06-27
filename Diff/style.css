@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+::-webkit-scrollbar {
+    width: 0
+}
+
+#scrollpath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, .05)
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    border-radius: 30px;
+    background: linear-gradient(to top, #008aff, #0fe);
+    animation: animate 5s linear infinite
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        filter: hue-rotate(0)
+    }
+
+    50% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #0fe);
+    filter: blur(10px)
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #0fe);
+    filter: blur(30px)
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 10
+}
+
+#navbar::before {
+    content: '';
+    background: rgba(0, 0, 0, .9);
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: -3;
+    opacity: .5
+}
+
+#navbar ul {
+    display: flex;
+    margin-bottom: 0
+}
+
+#navbar ul li {
+    color: #fff;
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 400
+}
+
+#navbar ul li {
+    color: #fff;
+    padding: 0 22px;
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 333;
+    transition: .7s
+}
+
+#navbar ul li a.active {
+    color: #a8a8a8
+}
+
+#navbar ul li a:hover {
+    text-align: center;
+    animation: animate 5s linear infinite
+}
+
+#logo {
+    margin: -1px 9px;
+    transition: .4s
+}
+
+#logo:hover {
+    transform: translateY(3px)
+}
+
+#logo img {
+    margin: 10px 6rem;
+    height: 2rem
+}
+
+back-to-top {
+    position: sticky;
+    bottom: 25px;
+    right: 25px;
+    float: right;
+    transition: .4s;
+    width: 25px;
+    height: 25px;
+    z-index: 33
+}
+
+back-to-top img {
+    width: 30px;
+    height: 30px;
+    margin: -1px;
+    transition: .4s;
+}
+
+back-to-top img:hover {
+    transform: translateY(-5px)
+}
+
+.btn-outline-danger {
+    font-weight: 500;
+}
+
+.divider {
+    background: linear-gradient(to top, #008aff, #0fe);
+    animation: animate 9s linear infinite;
+    height: 9px;
+}
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    background-color: #252525
+}
+
+#hero {
+    background-color: #252525;
+    height: 100vh
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 98vh
+}
+
+.h1-hero {
+    font-size: 3.5rem;
+    padding: 25px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600
+}
+
+#hero h1 {
+    color: #fff;
+    text-align: center
+}
+
+#hero p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 50px;
+    background-color: #252525
+}
+
+#links li {
+    padding: 2rem;
+    list-style: none;
+    font-size: 1.8rem;
+    color: #ffff
+}
+
+#links li a {
+    transition: .7s
+}
+
+#links a:hover {
+    animation: animate 4s linear infinite
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        filter: hue-rotate(0)
+    }
+
+    50% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+#navbar::before {
+    background: rgba(255, 255, 255, .2)
+}
+
+back-to-top img {
+    filter: invert(100)
+}

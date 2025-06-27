@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <style>
+  *{
+   margin: 0; padding: 0;
+  }
+
+  .waterbody{
+   width: 100%; height: 100vh;
+   background-image: url('water.jpg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+  }
+ </style>
+</head>
+<body>
+
+<header class="waterbody">
+</header>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+
+
+<script>
+ $('.waterbody').ripples({
+  waterbody:0.02,
+  resolution:100,
+ });
+</script>
+
+</body>
+</html>
